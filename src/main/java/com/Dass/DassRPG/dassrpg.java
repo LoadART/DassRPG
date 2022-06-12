@@ -1,5 +1,6 @@
 package com.Dass.DassRPG;
 
+import com.Dass.DassRPG.block.ModBlocks;
 import com.Dass.DassRPG.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Blocks;
@@ -24,7 +25,7 @@ public class dassrpg
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
-
+        ModBlocks.register(eventBus);
         eventBus.addListener(this::setup);
 
 
